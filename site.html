@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Marcelo</title>
+
+    <style>
+        /* RESET BÁSICO */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* PARALLAX */
+        .parallax {
+            background-image: url('MARCELO-LOGO.png');
+            height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fbd303;
+            position: relative;
+        }
+
+        .parallax::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.2);
+        }
+
+        .parallax h1 {
+            color: #111;
+            font-size: 60px;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            z-index: 1;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #222;
+        }
+
+        .sobre-box {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .sobre-box p {
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Cards */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            width: 300px;
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            border: none;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            color: #222;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        .card audio {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 40px;
+            padding: 20px 0;
+            background: #fff;
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.05);
+        }
+
+        /* RESPONSIVO */
+        @media(max-width: 900px) {
+            .card-container {
+                justify-content: center;
+            }
+        }
+
+        @media(max-width: 600px) {
+            .parallax h1 {
+                font-size: 40px;
+            }
+
+            .sobre-box {
+                padding: 30px 20px;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parallax">
+        <h1>Personal Marcelo</h1>
+    </div>
+
+    <!-- SOBRE -->
+    <div class="container">
+        <fieldset>
+            <div class="sobre-box">
+                <h2>Mais sobre...</h2>
+                <p>Marcelo é um personal trainer de 35 anos que se destaca pela combinação rara de conhecimento técnico, carisma e verdadeira paixão por transformar vidas. Com mais de uma década de experiência em treinamento funcional, musculação e reabilitação física, ele acredita que o exercício vai muito além da estética: é uma ferramenta poderosa para conquistar saúde, equilíbrio emocional e autoconfiança.</p>
+                <p>Conhecido por sua abordagem motivadora, Marcelo valoriza a individualidade de cada aluno. Ele cria treinos estratégicos, adaptados às necessidades e limitações de cada pessoa, sempre com foco em evolução constante e hábitos sustentáveis. Sua energia positiva, disciplina e comprometimento fazem com que seus clientes se sintam apoiados em cada etapa da jornada.</p>
+                <p>Para Marcelo, o objetivo não é apenas construir um corpo mais forte, mas uma mente resiliente e uma vida mais plena. Ele ensina que cuidar do corpo é um ato de respeito por si mesmo — e que qualquer mudança começa com uma simples decisão: dar o primeiro passo.</p>
+                
+                <div class="card-container">
+                    <div class="card">
+                        <img src="marcelo campeao.png" alt="Marcelo Campeão">
+                    </div>
+
+                    <div class="card">
+                        <img src="Marcelo 1.jpg" alt="Marcelo Treinando">
+                    </div>
+
+                    <div class="card">
+                        <img src="Marcelo 6.jpg" alt="Marcelo">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <!-- CONSULTORIAS -->
+    <div class="container">
+        <fieldset>
+            <h2>Consultorias</h2>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3><n>Online</n></h3>
+                    <p>Treinos personalizados para longa distância.</p>
+                    <p><n>Valor personalizado para cada aluno.</n></p>
+                </div>
+
+                <div class="card">
+                    <h3><n>Presencial</n></h3>
+                    <p>Planejamento completo para perda de peso saudável e eficiente.</p>
+                    <p><n>Valor personalizado para cada aluno.,</n></p>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <!-- ANTES E DEPOIS -->
+    <div class="container">
+        <fieldset>
+            <h2>Antes e Depois</h2>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="evolução 1.jfif" alt="Antes e Depois 1">
+                </div>
+                <div class="card">
+                    <img src="Evolução 3.webp" alt="Antes e Depois 2">
+                </div>
+                <div class="card">
+                    <img src="evolução 4.png" alt="Antes e Depois 3">
+                </div>
+            </div>
+
+            <h2>Depoimento</h2>
+
+            <div class="card-container">
+                <div class="card">
+                    <audio controls>
+                        <source src="depoimento.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Personal Marcelo. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Vitória Sales 💻✨</p>
+    </footer>
+
+</body>
+</html>
